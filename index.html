@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendář</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">zpět</button>
+          <button id="nextButton">dále</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Pondělí</div>
+        <div>Úterý</div>
+        <div>Středa</div>
+        <div>Čtvrtek</div>
+        <div>Pátek</div>
+        <div>Sobota</div>
+        <div>Neděle</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Nová událost</h2>
+
+      <input id="eventTitleInput" placeholder="Událost" />
+
+      <button id="saveButton">uložit</button>
+      <button id="cancelButton">ukončit</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Událost</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">smazat</button>
+      <button id="closeButton">zavřít</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
